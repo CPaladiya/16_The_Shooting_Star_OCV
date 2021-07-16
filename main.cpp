@@ -12,9 +12,9 @@ using namespace std;
 // we will have multiple masks for multiple colors we want to detect, for multiple colors we will use vector
 
 //vector of Hmin,Hmax,Smin,Smax,Vmin,Vmanx values for two different colors
+//OpenCV Uses BGR color definition instead of RGB
 vector<vector<int>> myColors {{45,97,65,255,105,255},{94,128,35,255,129,230}}; //bright green and blue here
 
-//vector<Scalar> defColors{{0,255,0},{255,0,0}}; //BGR color definition for green and blue - colors to be displayed on the marker tip
 
 Mat img; 
 vector<vector<int>> newPointsColor1; //ecah one will store {{x of circle ,y of circle ,color 0 = blue/1 = green}}
